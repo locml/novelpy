@@ -34,19 +34,19 @@ def start_scene():
         
         textbox = pygame.draw.rect(screen.draw, (50, 50, 50, 200), (0, 430, 800, 150))
         
-         screen.draw.blit(text, (20, 430))
+        screen.draw.blit(text, (20, 430))
         
-         pygame.display.update()
+        pygame.display.update()
         
-         if pygame.event.get(pygame.MOUSEBUTTONDOWN):
+        if pygame.event.get(pygame.MOUSEBUTTONDOWN):
         
-            return
+           return
             
-         elif pygame.event.get(pygame.QUIT):
+        elif pygame.event.get(pygame.QUIT):
         
-            running = False
+           running = False
             
-            endgame()
+           endgame()
             
     pygame.quit()
 ```
