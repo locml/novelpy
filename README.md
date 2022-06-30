@@ -17,7 +17,7 @@ py2exe: https://pypi.org/project/py2exe
 
 This is the first scene from the script.py on the start_scene().
 
-```renpy
+```python
 def start_scene():
 
     # Here's the code of the scene, my bad coding :(
