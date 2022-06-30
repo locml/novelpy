@@ -10,7 +10,7 @@ Python 3.5 to later: https://python.org
 
 pygame_sdl2: https://github.com/renpy/pygame_sdl2 / https://test.pypi.org/project/pygame_sdl2
 
-pygame (replacement) : pygame.org
+pygame (replacement) : https://pygame.org
 
 py2exe: https://pypi.org/project/py2exe
 
@@ -24,7 +24,7 @@ def start_scene():
       
     running = True
     
-    text = font.render("Hi this is cardcaptor sakura opening, want to try ?", True, white)
+    text = font.render("Hi this is a test dialogue, please continue by mouse click", True, white)
     
     while running:
     
@@ -49,4 +49,4 @@ def start_scene():
             endgame()
             
     pygame.quit()
-```    
+```
