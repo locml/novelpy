@@ -33,7 +33,7 @@ build(name="NovelPy",
                                             'pkg_resources'
                                             ],
                              'optimize' : 2,
-                             'dist_dir': "distributed/NovelPy 1.1.0"
+                             'dist_dir': "distributed/NovelPy 1.0.0"
                              },
                 }
       )
