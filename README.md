@@ -54,4 +54,4 @@ def start_scene():
 ```
 
 # Optional
-Please read from [here](https://github.com/locml/novelpy/blob/master/data/README.txt")
+Please read from [here](https://github.com/locml/novelpy/blob/master/data/README.txt)
