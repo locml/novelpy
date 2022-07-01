@@ -1,7 +1,8 @@
 # NovelPy 1.0
 
 My visual novel I wrote for fun okay? You have chance to try it!
-Made with Python 3.5 and Pygame SDL2
+
+Made with [Python 3.5](https://python.org) and [PyGame SDL2](https://github.com/renpy/pygame_sdl2)
 
 
 # Required to play it and build!
