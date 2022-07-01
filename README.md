@@ -6,18 +6,20 @@ Made with Python 3.5 and Pygame SDL2
 
 # Required to play it and build!
 
-Python 3.5 to later: https://python.org
+[Python 3.5 to later](https://python.org)
 
-pygame_sdl2: https://github.com/renpy/pygame_sdl2 / https://test.pypi.org/project/pygame_sdl2
+[pygame_sdl2 build](https://github.com/renpy/pygame_sdl2)
 
-pygame (replacement) : https://pygame.org
+[pygame_sdl2 prebuild](https://test.pypi.org/project/pygame_sdl2)
 
-py2exe: https://pypi.org/project/py2exe
+[pygame (replacement)](https://pygame.org)
+
+[py2exe](https://pypi.org/project/py2exe)
 
 
 This is the first scene from the script.py on the start_scene().
 
-```python
+```py
 def start_scene():
 
     # Here's the code of the scene, my bad coding :(
@@ -50,3 +52,6 @@ def start_scene():
             
     pygame.quit()
 ```
+
+# Optional
+Please read from [here](https://github.com/locml/novelpy/tree/master/data/README.txt")
