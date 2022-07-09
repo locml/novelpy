@@ -59,4 +59,4 @@ Please read from [here](https://github.com/locml/novelpy/blob/master/data/README
 
 # Checking for updates
 This is an outdated version because on the first time I just think to make this as main menu template so the code in the caption a bit wrong...
-Because of that I have make a [Main Menu](https://github.com/locml/main_menu)
+Because of that I have make a [Main Menu](https://github.com/locml/main_menu) use class instead of write to the while. (Including roundrect style and frame)
