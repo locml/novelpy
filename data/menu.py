@@ -64,7 +64,7 @@ while running:
     b3 = draw_rect(20, 400, 135, 28)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            quit()
+            endgame()
             running = False
         elif event.type == pygame.MOUSEBUTTONDOWN:
             if b1.collidepoint(event.pos):
@@ -79,7 +79,7 @@ while running:
             if b3.collidepoint(event.pos):
                 clicked_sound()
                 print("Button quit pressed.")
-                quit()
+                endgame()
                 running = False
                 
     screen.draw.blit(st, (20, 300))
