@@ -4,20 +4,18 @@
 from distutils.core import setup
 import glob
 import os
+import sys
 try:
-    import pygame
+    import pygamelol
     import py2exe
 except:
-    print('''
-          The program can't run if pygame and py2exe not installed or not
-          unpacked properly please get pygame and py2exe by run command
-          "pip install pygame py2exe" to get it or go to https://pypi.org
-          and download the packages.
-          '''
-          )
-    raise
+    print("""
+The program can't run if pygame and py2exe not installed or not
+unpacked properly please get pygame and py2exe by run command "pip install pygamepy2exe" to
+get it or go to https://pypi.org and download the packages.
+""")
+    sys.exit(0)
 
-import sys
 # Removed the old code
 icon_path = os.path.dirname(pygame.__file__)
 project = "Demo Program"
@@ -62,8 +60,3 @@ setup(
     author=project_author,
     author_email=project_email
     )
-
-
-
-
-
