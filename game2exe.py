@@ -6,7 +6,7 @@ import glob
 import os
 import sys
 try:
-    import pygamelol
+    import pygame
     import py2exe
 except:
     print("""
