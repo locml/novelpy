@@ -12,7 +12,7 @@ def start_scene():
         g.dt = int(g.clock.get_fps())
         g.screen.fill((0, 128, 255))
         all_sprites.draw(g.screen)
-        textbox.draw(g.screen, "Hi this is a test dialogue, please continue by click to the choice in screen.", 20, 430)
+        textbox.draw(g.screen, "Hi this is a test dialogue, please continue by using mouse.", 20, 430)
         if g.active_fps:
             g.fps_counter()
         pg.display.update()
@@ -35,13 +35,13 @@ def second_scene():
     all_sprites.add(char)
     all_sprites.add(textbox)
     running = True
-    narrator = font.render("Example Name", True, GREEN)
+    narrator = font.render("Place", True, GREEN)
     while running:
         g.clock.tick(FPS)
         g.dt = int(g.clock.get_fps())
         g.screen.fill((0, 128, 255))
         all_sprites.draw(g.screen)
-        textbox.draw(g.screen, "This is another dialogue for this example contains name too!", 20, 460)
+        textbox.draw(g.screen, "This is another dialogue for this example with my name here!", 20, 460)
         g.screen.blit(narrator, (20, 430))
         if g.active_fps:
             g.fps_counter()
@@ -64,7 +64,7 @@ def end_scene():
     test = True
     all_sprites = pg.sprite.Group()
     char = Character()
-    char.image = char.images[1]
+    char.image = char.images[1].convert_alpha()
     char.image.set_colorkey(WHITE)   
     textbox = Textbox(g.screen, (50, 50, 50, 150), 0, 430, 1280, 300, 12 )
     all_sprites.add(char)
@@ -88,6 +88,8 @@ def end_scene():
                 char.kill()
                 textbox.kill()
                 return
-start_scene()
-second_scene()
-end_scene()
+
+if __name__ == "__main__":
+    start_scene()
+    second_scene()
+    end_scene()

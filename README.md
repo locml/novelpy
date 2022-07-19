@@ -6,6 +6,4 @@ It's still in development, so something here not so good and can contains a lot 
 
 # New update
 
-Deleted build_zip.py again, added zip file export inside build_win.py
-
-Change the way main menu loop working, change background color, game.py to main.py
+Added web support for the project, minor change at the project files

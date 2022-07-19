@@ -28,9 +28,8 @@ or you can build the game with other tools.
         self.icon_path = os.path.dirname(pygame.__file__)
         self.project = "PyGame Novel Demo Game"
         self.project_version = "1.5"
-        self.project_script = "main.py"
+        self.project_script = [ "novelpy.py" ]
         self.project_console_scripts = [ 'build_win.py' ] # To rebuild game with new thing change those file on builded version.
-        self.project_exe = "run_game"
         self.project_icon = [
             (0, os.path.join(self.icon_path, "pygame.ico"))
             ]
@@ -41,15 +40,14 @@ or you can build the game with other tools.
         
         self.project_files = [
             ("data", glob.glob("data/*")),
-            ("", [ 'build_win.py' ]) # The script of the program.
+            ("", self.project_script + self.project_console_scripts) # The script of the program.
             ]
         
         self.project_zipfile = "lib/library.zip"
         self.project_dist = "pygame-novel"
         self.program = {
-            "script": self.project_script,
+            "script": self.project_script[0],
             "icon_resources": self.project_icon,
-            "dest_base": self.project_exe
             }
         
         self.project_options={
@@ -60,7 +58,7 @@ or you can build the game with other tools.
                 'dist_dir': self.project_dist
                 },
             }
-        self.project_archive = "pygame_novel-v2.0.zip"
+        self.project_archive = "pygame_novel-v2.0fixes.zip"
         
     def build_exe(self):
         
