@@ -6,4 +6,4 @@ It's still in development, so something here not so good and can contains a lot 
 
 # New update
 
-Added web support for the project, minor change at the project files
+Added minor change at the project files
